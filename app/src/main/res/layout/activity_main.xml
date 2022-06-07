@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Electricity Bill Calculator"
+        android:textStyle="bold"
+        android:textSize="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Morning usage (kwh)"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/etMorningUsage"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Afternoon usage (kwh)"
+        android:textSize="15dp" />
+
+    <EditText
+
+        android:id="@+id/etAfternoonUsage"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Evening usage (kwh)"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/etEveningUsage"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal" />
+
+    <Switch
+        android:id="@+id/swUsesRenewableEnergy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Uses Renewable Energy sources?" />
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Calculate" />
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Reset"
+        />
+
+    <TextView
+        android:id="@+id/tvChangesBreakDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Charges Breakdown"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Your Electricity Bill will be calculated here" />
+
+    <TextView
+        android:id="@+id/tvTotalUsage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Total Usage"
+        android:textColor="@color/white"
+        android:background="@color/teal_200"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvTaxes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="taxes" />
+
+    <TextView
+        android:id="@+id/tvTotalBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Bill"
+        android:textColor="@color/white"
+        android:background="@color/teal_700"
+        android:textSize="20sp"/>
+
+
+</LinearLayout>
